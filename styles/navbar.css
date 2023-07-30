@@ -1,0 +1,157 @@
+.navbar--container{
+    background-color: var(--background-color);
+    height: var(--navbar-height);
+    padding: 0 2rem ;
+    box-shadow: 0px 2px 5px 3px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: block;
+    top: var(--top-bar-height);
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar--left-side, .navbar--right-side{
+    height: 100%;
+}
+
+.navbar--left-side a{
+    cursor: default;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar--left-side a img{
+    height: 100%;
+}
+
+.navbar--right-side ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+.navbar--right-side ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+}
+
+.navbar--right-side ul li a{
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar--right-side ul li:hover{
+    color: var(--primary-color);
+    border-bottom: solid 0.2rem var(--primary-color);
+}
+
+.navbar--right-side hr{
+    display: none;
+    width: 100vw;
+    margin: auto;
+    background: #000;
+    height: 0.1rem;
+}
+
+.navbar--container button.menu{
+    position: absolute;
+    top:1;
+    right: 1rem;
+    display: none;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navbar--container{
+        height: var(--navbar-height-mobile);
+        top: var(--top-bar-height-mobile)
+    }
+    .navbar--right-side{
+        background-color: var(--background-color);
+        height: auto;
+        width: 100vw;
+        position: absolute;
+        top: 10vh;
+        left: 0px;
+        display: none;
+        box-shadow: 0px 2px 5px 3px rgba(0,0,0,.2);
+    }
+    .navbar--right-side ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    .navbar--right-side ul li{
+        padding: 1.5rem;
+    }
+    .navbar--container button.menu{
+        display: block;
+    }
+}
+
+.unhide{
+    display: block;
+}
+
+
+    /* Hamburger Menu*/
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 4;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 4;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 4;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+/* Hamburger Menu ends */

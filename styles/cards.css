@@ -1,0 +1,112 @@
+.underline{
+    text-decoration: underline;
+    padding: .2rem;
+}
+
+.card--container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.cards{
+    height: 80vh;
+    width: 22vw;
+    color:rgba(0, 0, 0, 0.685);
+    text-align: center;
+    background: #fff;
+    margin: 1rem;
+    text-align: left;
+    box-shadow: 0px 0px 5px 3px  rgba(0, 0, 0, 0.242);
+    font-weight: 700;
+    transition: transform 300ms ease-in, box-shadow 300ms ease-in;
+    cursor: default;
+}
+
+.cards:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 3px  rgba(0, 0, 0, 0.242);
+}
+
+.card--sale{
+    position: absolute;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    margin: 0.5rem;
+    letter-spacing: .1rem;
+
+}
+.cards--img{
+    height: 70%;
+    width: 100%;
+}
+.cards--img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cards--tagging{
+    font-style: italic;
+    text-decoration: none;
+    padding:0.5rem;
+    line-height: 3;
+}
+
+.card--size{
+    padding: 0 0 0 0.5rem;
+}
+
+.size--cloths{
+    padding:0.5rem;
+    color: var(--primary-color);    
+}
+.card-cut-pricing{
+    padding:0.5rem;
+    text-decoration:line-through ;
+    line-height: 3;  
+    color: rgba(131, 130, 130, 0.575);  
+}
+.card-normal-pricing{
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 910px) {
+
+    .card--sale{
+        height: 3rem;
+        width: 3rem;
+        font-size: 0.9rem;
+    }
+
+    .cards{
+        height: 50vh;
+        max-width: 15rem;
+        width: 45vw;
+        margin: 0.5rem;
+    }
+
+    .cards--img{
+        height: 60%;
+    }
+
+    .card--size, .size--cloths{
+        padding: 0 0 0 0.2rem;   
+        font-size: 0.9rem;
+    }
+    .card-cut-pricing{
+        padding: 0 0 0 0.2rem;
+        font-size: 0.9rem;
+    }
+}

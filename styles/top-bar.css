@@ -1,0 +1,20 @@
+.top-bar--container{
+    height: var(--top-bar-height);
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    position: block;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: clamp(0.8rem, 2vw , 0.9em);
+}
+
+@media screen and (max-width:700px) {
+    .top-bar--container{
+        height: var(--top-bar-height-mobile);
+    }
+}

@@ -1,0 +1,32 @@
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.heading .text{
+    display: inline-block;
+    width: auto;
+    color: rgb(68, 68, 68);
+}
+
+.heading .line{
+    height: 0.1rem;
+    width: 30%;
+    background-color: #EDEDEC;
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .heading{
+        font-size: 1.5rem;
+    }
+    .heading .line{
+        width: 20%;
+    }
+    
+}

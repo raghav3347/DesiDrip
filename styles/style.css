@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --primary-color: #0F9BED;
+    --background-color: #fff;
+    --navbar-height: 13vh;
+    --top-bar-height: 7vh;
+
+    --navbar-height-mobile: 10vh;
+    --top-bar-height-mobile: 6vh;
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    margin-top: 0;
+    background-color: var(--background-color);
+}
